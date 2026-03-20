@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char bidimensional[4][20];
+    int numero[5]={5,6,7,8,9};
+    int numeros[5][20];
+    char arregloC [5][20];
+/*
+    for(int i=0; i<4; i++){
+            printf("Ingresa tus nombres y apellidos: ");
+            fgets(bidimensional[i],sizeof(bidimensional[i]), stdin);
+
+
+    }
+     for(int i=0; i<4; i++){
+        printf("%s", bidimensional[i]);
+     }
+      for(int i=0; i<4; i++){
+     printf("%d\n", &numero[i]);
+      }*/
+      for(int i=0; i<5; i++){
+printf("%d\n", &arregloC[i]);
+      }
+printf("%d\n", arregloC[6]);
+
+for(int i=0; i<5; i++){
+    scanf("%d\n", &numeros[i]);
+}
+for(int i=0; i<5; i++){
+    printf("%d->%d\n", &numeros[i], numeros[i]);
+}
+
+    return 0;
+}
