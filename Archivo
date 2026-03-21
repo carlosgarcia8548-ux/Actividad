@@ -40,4 +40,3 @@ tablero[2][1] = 'O';
     fopen("tablero.txt", "r");
     return 0;
 }
--
